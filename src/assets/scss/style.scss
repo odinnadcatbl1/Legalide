@@ -1,0 +1,20 @@
+@import "vars";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    font-size: 21px;
+    color: $primary;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Blocks */
+@import "blocks/header";
