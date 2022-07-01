@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 3.6rem;
+    font-family: $secondfont;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2;
+    background: none;
+    border: 1px solid #784F33;
+    color: #784F33;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 3.7rem;
+    transition: all .3s ease;
+
+    &:hover {
+        color: white;
+        background: #784F33;
+    }
+
+}

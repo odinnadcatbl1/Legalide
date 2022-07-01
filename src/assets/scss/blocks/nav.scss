@@ -1,0 +1,32 @@
+.nav__list {
+    display: flex;
+
+    &--icons {
+        margin-left: 1.5rem;
+    }
+}
+
+.nav__item {
+    &:hover {
+
+        .nav__link {
+            color: $primary;
+        }
+
+        .nav__icon {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.nav__link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $secondary;
+    text-decoration: none;
+    padding: 1.25rem;
+}
+
+.nav__icon {
+    transition: transform 0.3s ease;
+}
