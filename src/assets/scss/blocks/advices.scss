@@ -1,0 +1,41 @@
+.advice {
+    padding: 12.5rem 0 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.advice__cards {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advice__cards-item {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: white;
+
+    &:not(:first-child) {
+        margin-left: 4rem;
+    }
+}
+
+.advice__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 4.5rem 3rem 3rem;
+    height: 55%;
+}
+
+.advice__img {
+    width: 100%;
+    height: 45%;
+    object-fit: contain;
+
+}
