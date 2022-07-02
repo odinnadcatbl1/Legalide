@@ -664,6 +664,9 @@ body {
   width: 35%;
   text-align: start;
 }
+.about__description .page__text {
+  padding-right: 2rem;
+}
 
 .video__btn {
   display: block;
