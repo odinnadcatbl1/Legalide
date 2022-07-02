@@ -10,6 +10,10 @@
     margin-top: 8rem;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 
 .practice__cards-item {
@@ -41,5 +45,13 @@
         margin-top: 1.5rem;
     }
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+
+        &:not(:first-child) {
+            margin-left: 0;
+            margin-top: 3rem;
+        }
+    }
 
 }

@@ -5,12 +5,22 @@
     justify-content: center;
     text-align: center;
     background-color: #FAFAFA;
+
+    
+    @media screen and (max-width: 768px) {
+        background-color: #F3F3F3;
+    }
 }
 
 .advice__cards {
     margin-top: 4.5rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 5rem;
+    }
 }
 
 .advice__cards-item {
@@ -19,9 +29,37 @@
     flex-direction: column;
     text-align: start;
     background-color: white;
+    justify-content: space-between;
 
     &:not(:first-child) {
-        margin-left: 4rem;
+        margin-left: 3.5rem;
+
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            &:nth-child(2n) {
+                margin-left: 3rem;
+            }
+        }
+
+        
+        @media screen and (max-width: 670px) {
+            &:nth-child(2n) {
+                margin-left: 0rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        min-width: 23rem;
+        width: 40%;
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 23rem;
+        width: 100%;
+        margin-bottom: 3rem;
     }
 }
 
@@ -30,12 +68,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 4.5rem 3rem 3rem;
-    height: 55%;
+
+    .page__subtitle {
+        padding-right: 5rem;
+    }
 }
 
 .advice__img {
     width: 100%;
-    height: 45%;
-    object-fit: contain;
+    object-fit: cover;
 
 }

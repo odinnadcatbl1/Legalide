@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #FAFAFA;
+    background-color: #F3F3F3;
 }
 
 .contact__cards {
@@ -13,10 +13,15 @@
     padding: 0 2.5rem;
     margin-top: 8rem;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .contact__cards-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 6rem 5rem;
     background-color: white;
     width: 33%;
@@ -33,6 +38,11 @@
             color: white;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        width: 33rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .contact__links {
@@ -40,6 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contact__link {

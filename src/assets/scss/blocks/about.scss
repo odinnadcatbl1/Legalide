@@ -9,6 +9,11 @@
 .about__container {
     margin-top: 10rem;
     display: flex;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
 }
 
 .about__video {
@@ -16,6 +21,12 @@
     position: relative;
     padding-right: 5rem;
     cursor: pointer;
+
+    &:hover {
+        .video__btn {
+            opacity: 0.85;
+        }
+    }
     
     img {
         width: 100%;
@@ -23,10 +34,9 @@
         object-fit: cover;
     }
 
-    &:hover {
-        .video__btn {
-            opacity: 0.85;
-        }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding-right: 0;
     }
 }
 
@@ -37,6 +47,12 @@
 
     .page__text {
         padding-right: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 7.2rem;
+        width: 100%;
+        padding-left: 0;
     }
 }
 
@@ -52,6 +68,10 @@
     left: 50%;
     transform: translate(-65%, -50%);
     transition: opacity 0.2s linear;
+    
+    @media screen and (max-width: 768px) {
+        transform: translate(-50%, -50%);
+    }
 }
 
 .about__list {
