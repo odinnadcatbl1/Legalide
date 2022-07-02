@@ -19,4 +19,14 @@
         background: #784F33;
     }
 
+    &--square {
+        border-radius: 5px;
+        background-color: #784F33;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: #784F33;
+        }
+    }
 }
