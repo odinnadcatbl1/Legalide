@@ -1,0 +1,83 @@
+.clients {
+    background-color: #FAFAFA;
+
+    .container {
+        position: relative;
+    }
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2.5rem 13rem;
+}
+
+.clients__footer {
+    height: 77px;
+    width: 100%;
+    background-color: #252B42;
+}
+
+.clients__form-container {
+    position: absolute;
+    padding: 0 2.5rem;
+    width: 100%;
+    top: 70%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.clients__form {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, #295C7A, #0072B5);
+    padding: 3.3rem 5rem 3.3rem 5rem;
+}  
+
+.clients__form-text {
+    width: 40%;
+    font-family: $firstfont;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    color: white;
+    padding-right: 10rem;
+}
+
+.clients__form-actions {
+    font-family: $thirdfont;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.clients__form-button {
+    border: none;
+    padding: 1.5rem 2.4rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: inherit;
+    font-weight: 400;
+    background-color: #D0A144;
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+
+.clients__form-input {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.4rem;
+    font-family: inherit;
+    line-height: 2;
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2;
+    }
+}
