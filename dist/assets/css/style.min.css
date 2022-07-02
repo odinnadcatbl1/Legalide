@@ -733,7 +733,7 @@ body {
   position: absolute;
   padding: 0 2.5rem;
   width: 100%;
-  top: 70%;
+  top: 75%;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -743,7 +743,7 @@ body {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(to left, #295C7A, #0072B5);
-  padding: 3.3rem 5rem 3.3rem 5rem;
+  padding: 3.1rem 5rem 3.1rem 5rem;
 }
 
 .clients__form-text {
